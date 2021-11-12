@@ -2,7 +2,7 @@
 
 export const isSubmitted={
     isSubmitted:false,
-    timeLeft:5 //sec
+    timeLeft:300 //sec
 }
 
 const data=[
