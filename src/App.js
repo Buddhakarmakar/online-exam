@@ -10,7 +10,7 @@ function App() {
     <Router>
         <div>
           <Route exact path="/" component={Question} />
-          <Route path="/online-exam" component={SendData}/>
+          <Route path="/online-exam" component={Question}/>
         </div>
 
     </Router>
