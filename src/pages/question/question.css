@@ -1,0 +1,277 @@
+.paginationButton{
+    width: 80px;
+    height: 40px;
+   
+    display: flex;
+
+    list-style: none;
+}
+
+.paginationButton a{
+    text-decoration: none;
+    /* color: #fff; */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid #0d0ab9;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+
+.paginationButton a:hover{
+    background-color: #0d0ab9;
+    color: #fff
+}
+.paginationActive{
+    /* text-decoration: none;
+    border-radius: 5px; */
+  
+    width: auto;
+    background-color:#0d0ab9;
+    cursor: pointer;
+    border:1px solid #0d0ab9;
+    border-radius: 5px
+}
+.paginationDisabled a{
+    cursor: not-allowed;
+    background-color: #83867f;
+    color:red
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    /* background-color: rgb(126, 12, 12); */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-link{
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border:1px solid #0d0ab9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+}
+.page-link:hover{
+    background-color: #0d0ab9;
+    color: #fff
+}
+.page-link:active{
+    background-color: #0ab921;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+  
+    border:1px solid #0aadb9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+}
+.page-link-visited{
+  width: 80px;
+    height: 40px;
+    background-color: rgb(211, 58, 71);
+    border:1px solid #0aadb9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+    color:#fff
+}
+.page-link-visited:hover{
+  width: 80px;
+    height: 40px;
+    background-color: rgb(209, 114, 122);
+    border:1px solid #0aadb9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+    color: #fff
+}
+.page-link-answered{
+
+  width: 80px;
+  height: 40px;
+  background-color: rgb(58, 211, 109);
+  border:1px solid #0aadb9;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin:10px;
+}
+.page-link-answered:hover{
+
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: rgb(106, 228, 145);
+  border:1px solid #0aadb9;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin:10px;
+}
+a{
+    text-decoration: none;
+}
+.page-link:focus{
+    background-color: #0ab921;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+  
+    border:1px solid #0aadb9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px;
+}
+a:visited{
+    text-decoration: none;
+    background-color: #b99f0a;
+    color: #fff
+}
+.page-item{
+    list-style: none;
+
+}
+.page-item:active{
+    background-color: #0d0ab9;
+}
+.page-button-contrainer{
+    display: flex;
+}
+
+.option{
+    width:400px;
+    height:40px;
+    border:1px solid #0d0ab9;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.option:hover{
+    background-color: #5d5ad4;
+    color: #fff
+}
+
+
+.disabled{
+  cursor: not-allowed;
+  width:auto;
+  height:40px;
+  font-weight: bold;
+  background-color:transparent;
+  color:red;;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border:1px solid red;
+  font-size: 20px;
+}
+.bottom{
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+  width: 80%;
+    height: auto;
+  
+
+}
+
+.radio-disabled{
+  cursor: not-allowed;
+}
+:root {
+    --form-control-color: rebeccapurple;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  form {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  
+  .form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+  
+  /* .form-control + .form-control {
+    margin-top: 1em;
+  } */
+  
+  .form-control:focus-within {
+    color: var(--form-control-color);
+  }
+  
+  input[type=radio] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    -moz-appearance: none;
+         appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type=radio]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type=radio]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type=radio]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+  }
